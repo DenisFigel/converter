@@ -1,0 +1,25 @@
+$primary-color: #007bff; // Change this to your desired primary color
+$navbar-text-color: #000; // Change this to your desired text color
+/* Header Styles */
+header {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  color: #000;
+}
+
+.navbar-nav {
+  color: $navbar-text-color; // Updated text color for better visibility
+  margin-right: 10px;
+
+  li {
+    margin: 0 5px;
+  }
+}

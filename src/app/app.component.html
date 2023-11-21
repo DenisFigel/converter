@@ -1,0 +1,63 @@
+<div class="container">
+  <!-- Header -->
+  <app-header></app-header>
+
+  <!-- Content -->
+  <form [formGroup]="form">
+    <div class="row justify-content-around">
+      <div class="col-4">
+        <div class="card" formGroupName="from">
+          <div class="card-header">
+            <h5 class="card-title">From</h5>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="amount" class="form-label">Amount</label>
+              <input type="number" class="form-control" id="amount" appOnlyNumbers formControlName="value" id="inputColumn1" placeholder="Enter amount">
+            </div>
+            <div class="mb-3">
+              <label for="fromCurrency" class="form-label">From Currency</label>
+              <select class="form-select" formControlName="currency" id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="UAH">UAH</option>
+                <option value="EUR">EUR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 text-center align-self-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrows" viewBox="0 0 16 16">
+          <path d="M1.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L2.707 7.5h10.586l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L13.293 8.5H2.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2Z"/>
+        </svg>
+      </div>
+      <div class="col-4">
+        <div class="card" formGroupName="to">
+          <div class="card-header">
+            <h5 class="card-title">To</h5>
+          </div>
+          <div class="card-body">
+              <div class="mb-3">
+                <label for="amount" class="form-label">Amount</label>
+                <input type="number" class="form-control" id="amount" appOnlyNumbers formControlName="value" id="inputColumn2" placeholder="Enter amount">
+              </div>
+              <div class="mb-3">
+                <label for="toCurrency" class="form-label">From Currency</label>
+                <select class="form-select" formControlName="currency" id="toCurrency">
+                  <option value="USD">USD</option>
+                  <option value="UAH">UAH</option>
+                  <option value="EUR">EUR</option>
+                </select>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- Footer -->
+  <footer class="mt-3">
+    <p class="mb-0">&copy; 2023</p>
+  </footer>
+</div>
+
